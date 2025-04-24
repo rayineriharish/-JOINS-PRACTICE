@@ -38,3 +38,28 @@ This returned all departments, including those not linked to any employees. It e
 
 FULL OUTER JOIN:
 This join combined the results of both LEFT and RIGHT joins. It included all employees and all departments, showing NULL where matches were absent on either side. This provides the most comprehensive overview, useful for identifying data mismatches or incomplete entries.
+
+
+#OUTPUT
+#FULLOUTERJOIN
+"empid","name","deptname"
+1,"Alice","HR"
+2,"Bob","IT"
+
+#INNERJOIN
+"empid","name","deptname"
+1,"Alice","HR"
+2,"Bob","IT"
+
+#RIGHTJOIN
+"empid","name","deptname"
+1,"Alice","HR"
+2,"Bob","IT"
+NULL,NULL,"Marketing"
+
+#LEFTJOIN
+"empid","name","deptname"
+1,"Alice","HR"
+2,"Bob","IT"
+3,"Charlie",NULL
+4,"David",NULL
